@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.sidebar {
+  position: fixed; /* Ou absolute selon votre besoin */
+  z-index: 1000; /* Un z-index élevé pour passer au-dessus */
+  height: 100vh; /* Pleine hauteur pour recouvrir */
+  transition: all 0.3s ease; /* Transition douce pour les animations */
+}
+
+.sidebar:hover {
+  width: 250px; /* Largeur de votre choix pour l'hover */
+}
+/* App.css */
+
+/* Dark Mode styles */
+
+/* App.css */
+
+/* Default light mode background */
+body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Dark mode background */
+.dark body {
+  background-color: #1f2937; /* Dark background */
+  color: #e5e7eb; /* Light text color */
+}
+
+/* Customize more elements here for dark mode */
+.dark .bg-white {
+  background-color: #2d3748; /* Example dark background for specific elements */
+}
+
+.dark .bg-white {
+  background-color: #1f2937; /* Dark background */
+}
+
+.dark .text-gray-900 {
+  color: #e5e7eb; /* Light text */
+}
+
+.dark .bg-blue-500 {
+  background-color: #3b82f6; /* Light blue button */
+}
+
+/* Add other dark mode customizations here */

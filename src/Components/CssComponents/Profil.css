@@ -1,0 +1,46 @@
+.profilePicture {
+    display: flex;
+    justify-content: space-around;
+    gap: 1000px;
+  }
+
+/* Icon styles */
+.fa-bars {
+  font-size: 2em;
+  margin: 30px;
+  position: relative; /* Needed for the absolute positioning of the text */
+  color: white; /* Set the initial color to white */
+}
+
+/* Hidden text by default, shown only on hover */
+.fa-bars::after {
+  content: 'Settings';  /* The text to display */
+  position: absolute;
+  top: 110%;  /* Position the text just below the icon */
+  left: 50%;  /* Center the text horizontally */
+  transform: translateX(-50%);
+  opacity: 0;  /* Initially hidden */
+  pointer-events: none;  /* Prevent the text from blocking interactions */
+  font-size: 9px;  /* Adjust text size */
+  text-transform: capitalize;  /* Capitalize only the first letter */
+  transition: opacity 0.3s ease, color 0.3s ease;  /* Smooth transition */
+  color: white; /* Set text color to white */
+}
+
+.fa-bars:hover {
+  color: white; /* Change the icon color to white on hover */
+}
+
+.fa-bars:hover::after {
+  opacity: 1;  /* Show the text when the icon is hovered */
+  color: white; /* Make sure the text is also white */
+}
+
+.iconButton {
+  background: none;  /* Removes background */
+  border: none;      /* Removes border */
+  padding: 0;        /* Removes padding */
+  width: auto;       /* Keeps width auto to fit the icon */
+  height: auto;      /* Keeps height auto to fit the icon */
+  display: inline-flex;  /* Makes sure the icon stays inline */
+}

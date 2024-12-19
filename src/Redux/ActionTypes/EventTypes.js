@@ -1,0 +1,5 @@
+export const GETEVENTS = "GETEVENTS"
+
+export const GETONEEVENT = "GETONEEVENT"
+
+export const GETMYEVENTS = "GETMYEVENTS"
