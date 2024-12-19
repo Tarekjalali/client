@@ -14,7 +14,7 @@ const Events = () => {
     dispatch(getevents());
   }, [dispatch]);
 
-  const events = useSelector(state => state.eventsReducer?.events?);
+  const events = useSelector(state => state.eventsReducer?.events);
 
   // State to store search query and filtered events
   const [search, setSearch] = useState('');
